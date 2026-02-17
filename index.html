@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Despliegue Automático</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #2b001f;
+      color: white;
+      text-align: center;
+      padding: 50px;
+    }
+    .card {
+      background: #5b003f;
+      border-radius: 15px;
+      padding: 40px;
+      max-width: 600px;
+      margin: auto;
+      border: 1px solid #7a1256;
+    }
+    h1 { margin-top: 0; }
+    .chip {
+      background: #a31f56;
+      padding: 10px 20px;
+      border-radius: 30px;
+      display: inline-block;
+      margin: 15px 0;
+      font-weight: bold;
+    }
+    .note {
+      background: #520631;
+      border: 1px solid #7e1b51;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Despliegue Automático Exitoso</h1>
+    <p>Este sitio se despliega automáticamente usando GitHub Actions y Surge.sh</p>
+
+    <div class="chip">CI/CD Funcionando Correctamente</div>
+
+    <div class="note">
+      Mandato: Crear repo, configurar workflow en <b>.github/workflows/deploy.yml</b>, usar
+      <b>SURGE_TOKEN</b> como secret y desplegar automáticamente al hacer push.
+    </div>
+  </div>
+</body>
+</html>
